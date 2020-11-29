@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Title</title>
+    <script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+    <script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js" defer></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css"/>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<ion-app>
+    <ion-header>
+        <ion-toolbar>
+            <ion-title>AnimeList</ion-title>
+        </ion-toolbar>
+    </ion-header>
+
+    <ion-content>
+        <ion-item>
+            <ion-searchbar id="search"></ion-searchbar>
+            <ion-select value="manga" ok-text="Confirmer" cancel-text="Retour" id="select">
+                <ion-select-option value="manga">Manga</ion-select-option>
+                <ion-select-option value="anime">Anime</ion-select-option>
+                <ion-select-option value="people">Personne</ion-select-option>
+                <ion-select-option value="character">Personnage</ion-select-option>
+            </ion-select>
+        </ion-item>
+
+
+        <ion-button id="btn" expand="block">Rechercher</ion-button>
+
+        <section id="container">
+
+        </section>
+
+
+
+    </ion-content>
+
+
+
+</ion-app>
+
+<script src="script.js"></script>
+
+</body>
+</html>

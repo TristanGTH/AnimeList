@@ -1,0 +1,23 @@
+input{
+    width: 50%;
+}
+
+#container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+}
+
+.infoArticle{
+    width: 70%;
+    box-shadow: 1px 1px 1px black;
+    margin: 20px;
+
+}
+
